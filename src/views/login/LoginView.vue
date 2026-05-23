@@ -91,7 +91,7 @@ async function handleLogin() {
       showCaptcha.value ? form.captchaInput : undefined
     )
     ElMessage.success('登录成功')
-    router.push('/dashboard')
+    router.push('/tenant')
   } catch (e: any) {
     if (e?.code === '429') {
       // Captcha now required (5+ failures in 1 min for this account)
