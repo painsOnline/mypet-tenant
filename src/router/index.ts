@@ -30,6 +30,11 @@ const routes = [
         name: 'AdminList',
         component: () => import('@/views/admin/AdminListView.vue'),
       },
+      {
+        path: 'migration',
+        name: 'Migration',
+        component: () => import('@/views/migration/MigrationView.vue'),
+      },
     ],
   },
 ]

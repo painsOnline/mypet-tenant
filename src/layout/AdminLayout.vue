@@ -19,6 +19,10 @@
           <el-icon><User /></el-icon>
           <span>系统管理员</span>
         </el-menu-item>
+        <el-menu-item index="/migration">
+          <el-icon><Operation /></el-icon>
+          <span>数据库迁移</span>
+        </el-menu-item>
       </el-menu>
     </el-aside>
     <el-container>
@@ -44,7 +48,7 @@ import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import { ElMessageBox } from 'element-plus'
-import { OfficeBuilding, User, UserFilled } from '@element-plus/icons-vue'
+import { OfficeBuilding, User, UserFilled, Operation } from '@element-plus/icons-vue'
 
 const route = useRoute()
 const router = useRouter()
